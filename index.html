@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        "use strict";
+        document.addEventListener("click", function click(){
+            // alert("aa");
+            console.log("clicked");
+            let conf = confirm("Are you sure?");
+            console.log(conf);
+        })
+        let arr = [25,56,78];
+        console.log(this);
+       
+       let test = {
+           a: this,
+           myfunc : function(number){
+               console.log(this);
+           }
+       }
+       test.myfunc();
+       console.log(test.a);
+       setTimeout(() => {
+           console.log("Abid Ali")
+       },3000)
+       console.log("test k liay");
+    </script>
+</head>
+<body>
+    <h1>I am Muhammad Abid!!</h1>
+</body>
+</html>
